@@ -26,35 +26,38 @@ pip install pandas numpy pillow pytesseract ocr_tamil transformers keras tensorf
 
 Tesseract OCR with Malayalam Support
 1. Install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
-2. Install Malayalam language pack: tesseract-ocr-mal
-3. Update the Tesseract path in the code:
+   
+3. Install Malayalam language pack: tesseract-ocr-mal
+   
+5. Update the Tesseract path in the code:
    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 Hugging Face Token
 The code uses IndicBERT from Hugging Face. Replace the token with your own:
 HF_TOKEN = "your_huggingface_token_here"
 Dataset Structure
-project/
-│
-├── train.csv           # Training data with meme_ids and labels (Tamil)
-├── test.csv            # Test data with meme_ids (Tamil)
-├── Train_images_Tamil/       # Training images folder (Tamil)
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   └── ...
-├── Test_images_Tamil/        # Test images folder (Tamil)
-│   ├── 101.jpg
-│   ├── 102.jpg
-│   └── ...
-├── train_malayalam.csv           # Training data with meme_ids and labels (Malayalam)
-├── test_malayalam.csv            # Test data with meme_ids (Malayalam)
-├── Train_images_Malayalam/       # Training images folder (Malayalam)
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   └── ...
-├── Test_images_Malalayam/        # Test images folder (Malayalam)
-│   ├── 101.jpg
-│   ├── 102.jpg
-│   └── ...
+
+project/<br>
+│<br>
+├── train.csv           # Training data with meme_ids and labels (Tamil)<br>
+├── test.csv            # Test data with meme_ids (Tamil)<br>
+├── Train_images_Tamil/       # Training images folder (Tamil)<br>
+│   ├── 1.jpg<br>
+│   ├── 2.jpg<br>
+│   └── ...<br>
+├── Test_images_Tamil/        # Test images folder (Tamil)<br>
+│   ├── 101.jpg<br>
+│   ├── 102.jpg<br>
+│   └── ...<br>
+├── train_malayalam.csv           # Training data with meme_ids and labels (Malayalam)<br>
+├── test_malayalam.csv            # Test data with meme_ids (Malayalam)<br>
+├── Train_images_Malayalam/       # Training images folder (Malayalam)<br>
+│   ├── 1.jpg<br>
+│   ├── 2.jpg<br>
+│   └── ...<br>
+├── Test_images_Malalayam/        # Test images folder (Malayalam)<br>
+│   ├── 101.jpg<br>
+│   ├── 102.jpg<br>
+│   └── ...<br>
 
 Adjust OCR Parameters
 Modify psm_configs and lang_configs in extract_malayalam_text_enhanced():
