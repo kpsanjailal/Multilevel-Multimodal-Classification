@@ -1,5 +1,7 @@
 DravidianLangTech-2026: Shared Tasks 2026 - Multilevel Political Meme Classification in Tamil and Malayalam (Tamil & Malayalam)
+
 Dataset can be download from : https://sites.google.com/view/dravidianlangtech-2026/ or https://www.codabench.org/competitions/11325/
+
 This project implements a multimodal deep learning model to classify Tamil and Malayalam political memes into two hierarchical levels of categories. The model combines text extracted from meme images using OCR (Tesseract) with visual features from VGG16, and uses IndicBERT for text encoding.
 Overview
 The system processes Malayalam meme images to:
