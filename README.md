@@ -82,6 +82,7 @@ Acknowledgments
 - Tesseract OCR team
 - ocr_tamil team
 - VGG16 model from Keras applications
+
 Contact
 For questions or suggestions, please open an issue on GitHub.
 
